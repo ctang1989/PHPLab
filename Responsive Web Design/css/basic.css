@@ -1,0 +1,36 @@
+body,h2{margin:0px;padding:0px;color:white}
+section#main, header, aside, footer{
+	background:#0099CC;
+	margin:3px 0;
+}
+h2{text-align:center;font-size:1em;}
+section#container{
+	margin:0 auto;
+	width:960px;
+}
+header{
+	float:left;
+	width:100%;
+	line-height:50px;
+}
+#left{
+	float:left;
+	width:200px;
+	line-height:400px;
+}
+section#main{
+	float:left;
+	width:540px;
+	line-height:400px;
+	margin-left:10px;
+}
+#right{
+	float:right;
+	width:200px;
+	line-height:400px;
+}		
+footer{
+	float:left;
+	width:100%;
+	line-height:50px;
+}

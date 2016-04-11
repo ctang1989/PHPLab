@@ -1,0 +1,26 @@
+h2{color:white;font-size:1em}
+section#container{
+	width:98%;
+	margin:0 auto;
+}
+section#container header{
+	background-color:#0099CC;
+}
+#left{
+	float:left;
+	width:100%;
+	line-height:100px;
+	display:none;
+}
+section#main{
+	float:left;
+	width:100%;
+	line-height:200px;
+	margin-left:0px;
+}
+
+#right{
+	float:left;
+	width:100%;
+	line-height:100px;
+}
