@@ -17,10 +17,15 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
+// 默认指向Admin模块
+$_GET['m'] = 'Admin';
+// 默认指向Admin控制器
+$_GET['c'] = 'Admin';
+
 // 定义应用目录
 define('APP_PATH','./Weibo/');
 
 // 引入ThinkPHP入口文件
-require './Think/ThinkPHP.php';
+require './ThinkPHP/ThinkPHP.php';
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单
