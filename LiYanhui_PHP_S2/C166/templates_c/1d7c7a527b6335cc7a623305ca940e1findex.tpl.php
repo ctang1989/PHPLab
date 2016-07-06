@@ -6,8 +6,6 @@
 </head>
 <body>
 
-<?php include 'test.php'; ?>
-
 <!-- 我是静态注释 -->
 
 系统设置了分页数为：<?php echo $this->config['pagesize']; ?>

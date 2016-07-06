@@ -39,8 +39,22 @@ class Templates {
 		if (!file_exists($tplFile)) {
 			exit('ERROR: 模板文件不存在！');
 		}
-		// 生成编译文件
+		// 编译文件
 		$parFile = TPL_C_DIR.md5($file).$file.'.php';
+		// 缓存文件
+		$cacheFile = CACHE.md5($file).$file.'.html';
+		// 当第二次运行相同文件的时候，直接载入缓存文件，避开编译
+		if (IS_CACHE) {
+			// 缓存文件和编译文件都要存在
+			if (file_exists($cacheFile) && file_exists($parFile)) {
+				// 判断模板文件是否修改过，判断编译文件是否修改过
+				if (filemtime($parFile) >= filemtime($tplFile) && filemtime($cacheFile) >= filemtime($parFile)) {
+					// 载入缓存文件
+					include $cacheFile;
+					return;
+				}
+			}
+		}
 		// 当编译文件不存在或者模板文件修改过，则生成编译文件
 		if (!file_exists($parFile) || filemtime($parFile) < filemtime($tplFile)) {
 			// 引入模板解析类
@@ -50,6 +64,14 @@ class Templates {
 		}
 		// 载入编译文件
 		include $parFile;
+		if (IS_CACHE) {
+			// 获取缓冲区内的数据，并且创建缓存文件
+			file_put_contents($cacheFile, ob_get_contents());
+			// 清除缓冲区（清除了编译文件加载的内容）
+			ob_end_clean();
+			// 载入缓存文件
+			include $cacheFile;
+		}
 	}
 }
 ?>
