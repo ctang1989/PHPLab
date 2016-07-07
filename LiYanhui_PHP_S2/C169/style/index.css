@@ -1,0 +1,176 @@
+@charset "utf-8";
+body,h1,h2,h3,p,form,ul,li,dl,dt,dd {
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	font-size: 12px;
+	color: #666;
+}
+ul {
+	list-style-type: none;
+}
+#top {
+	height: 26px;
+	background: url(../images/top_bg.png);
+	margin: 0 0 10px 0;
+	text-align: right;
+}
+#top a {
+	display: inline-block;
+	padding: 5px 10px 0 0;
+	color: red;
+}
+#header {
+	height: 80px;
+	margin: 0 0 10px 0;
+}
+#header h1 {
+	width: 250px;
+	height: 80px;
+	background: url(../images/logo.png) no-repeat;
+	font-size: 14px;
+	float: left;
+}
+#header h1 a {
+	height: 80px;
+	display: block;
+	text-indent: -9999px;
+}
+#header div.adver {
+	width: 690px;
+	height: 80px;
+	float: right;
+	border: 1px solid #ccc;
+}
+#header div.adver img {
+	display: block;
+	border: none;
+}
+#nav {
+	height: 35px;
+	background: url(../images/nav_bg.png);
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+#nav ul {
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 0 0 10px;
+}
+#nav ul li {
+	display: inline;
+	padding: 0 12px;
+}
+#nav ul li a {
+	color: #369;
+	text-decoration: none;
+}
+#nav ul li a:hover {
+	color: #f60;
+}
+#search {
+	height: 30px;
+	margin: 0 0 10px 0;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 5px 0 0 5px;
+}
+#search form {
+	float: left;
+}
+#search form select {
+	width: 90px;
+}
+#search form input.text {
+	width: 200px;
+}
+#search form input.submit {
+	width: 45px;
+}
+#search strong {
+	float: left;
+	padding: 5px 0 0 15px;
+}
+#search ul {
+	float: left;
+	padding: 5px 0 0 0;
+}
+#search ul li {
+	float: left;
+	padding: 0 8px 0 0;
+}
+#search ul li a {
+	color: green;
+	text-decoration: none;
+}
+#search ul li a:hover {
+	color: #f60;
+}
+#user {
+	width: 270px;
+	height: 400px;
+	background: orange;
+	float: right;
+	margin: 0 0 10px 0;
+}
+#news {
+	width: 400px;
+	height: 400px;
+	background: blue;
+	float: right;
+	margin: 0 10px 10px 0;
+}
+#pic {
+	width: 270px;
+	height: 195px;
+	background: green;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#rec {
+	width: 270px;
+	height: 195px;
+	background: red;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#sidebar-right {
+	width: 270px;
+	height: 835px;
+	background: red;
+	float: right;
+	margin: 0 0 10px 0;
+}
+#picnews {
+	width: 680px;
+	height: 200px;
+	background: yellow;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#newslist {
+	width: 680px;
+	height: 625px;
+	background: pink;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#link {
+	width: 960px;
+	height: 110px;
+	background: orange;
+	float: left;
+	margin: 0 0 10px 0;
+}
+#footer {
+	width: 960px;
+	height: 40px;
+	background: blue;
+	float: left;
+}
