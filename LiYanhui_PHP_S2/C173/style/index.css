@@ -436,9 +436,50 @@ h2 {
 #link {
 	width: 960px;
 	height: 110px;
-	background: orange;
+	border: 1px solid #ccc;
 	float: left;
 	margin: 0 0 10px 0;
+}
+#link span {
+	float: right;
+	padding: 0 10px 0 0;
+	font-weight: normal;
+}
+#link span a {
+	color: #360;
+	text-decoration: none;
+}
+#link span a:hover {
+	color: #f60;
+}
+#link ul {
+	border-bottom: 1px dashed #999;
+	height: 30px;
+	line-height: 30px;
+	width: 98%;
+	margin: 0 auto;
+}
+#link ul li {
+	display: inline;
+	padding: 5px 10px 0 0;
+}
+#link ul li a {
+	color: #666;
+	text-decoration: none;
+}
+#link ul li a:hover {
+	text-decoration: underline;
+}
+#link dl {
+	padding: 10px 0 0 0;
+}
+#link dl dd {
+	float: left;
+	padding: 0 8px;
+}
+#link dl dd img {
+	border: none;
+	display: block;
 }
 #footer {
 	width: 960px;
