@@ -7,7 +7,11 @@
 </head>
 <body id="sidebar">
 
-sidebar
+<dl>
+	<dt>内容管理</dt>
+	<dd><a href="###">添加新文档</a></dd>
+	<dd><a href="###">查看文档列表</a></dd>
+</dl>
 
 </body>
 </html>

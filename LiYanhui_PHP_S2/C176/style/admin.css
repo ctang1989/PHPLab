@@ -8,3 +8,17 @@ body {
 	background: #fff;
 	font-size: 12px;
 }
+#top {
+	background: url(../images/admin_top_bg.gif);
+}
+#top h1 {
+	width: 150px;
+	height: 80px;
+	font-size: 12px;
+	background: url(../images/logosmall.png) no-repeat;
+	text-indent: -9999px;
+	float: left;
+}
+#sidebar {
+	background: #f7fbfc url(../images/sidebar_right.png) repeat-y right;
+}

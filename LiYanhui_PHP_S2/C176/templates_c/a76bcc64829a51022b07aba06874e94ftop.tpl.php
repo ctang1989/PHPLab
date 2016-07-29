@@ -5,9 +5,9 @@
 <title>top</title>
 <link rel="stylesheet" type="text/css" href="../style/admin.css" />
 </head>
-<body>
+<body id="top">
 
-top
+<h1>LOGO</h1>
 
 </body>
 </html>
